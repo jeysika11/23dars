@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card-wrapper {
+   margin: auto;
+   width: 2000px;
+   padding: 200px 0px;
+   position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+   margin: 30px;
+    animation-duration: 7s;
+    animation-name:cardAnime ;
+    position:absolute;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    z-index: 1;
+    left: 0;
+    top: 50px;
+
+   
+}
+.cards{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+
+@keyframes cardAnime{
+0%{
+left: 0;
+top: 800px;
+
+
+}
+11%{
+   left: 0px;
+   top:1400px;
+    
+}
+22%{
+left:0px;
+top:700px;
+}
+33%{
+    left: 0px;
+    top: 1400px;
+
+}
+44%{
+    left:0px ;
+    top:600px;
+}
+55%{
+top: 0px;
+left: 1600px;
+}
+66%{
+top: 100px;
+left: 1600px;
+}
+77%{
+top: 700px;
+left: 1300px;
+}
+88%{
+top: 1000px;
+left: 1100px;
+}
+100%{
+    top: 1000px;
+    left: 0px;
+}
+}
